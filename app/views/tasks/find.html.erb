@@ -1,0 +1,16 @@
+<div class="container d=flex py-5">
+
+  <div class="card" style="width: 30vw;">
+    <div class="card-header">
+      <%= @task.title %>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <%= @task.details %>
+      </blockquote>
+    </div>
+  </div>
+  <br>
+  <%= link_to('Back to tasks', tasks_path) %>
+  <%= link_to('Edit Task', task_edit_path) %>
+</div>
